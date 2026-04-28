@@ -4,17 +4,14 @@ from alembic import context
 import sys
 from pathlib import Path
 
-# Добавляем корневую папку проекта в путь Python
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
-# Импортируем ваши модели
 from app.database import Base
-from app import models  # noqa
+from app import models  
 
 config = context.config
 fileConfig(config.config_file_name)
 
-# ЭТО ВАЖНО - указываем метаданные моделей
 target_metadata = Base.metadata
 
 def run_migrations_offline():

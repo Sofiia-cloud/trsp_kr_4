@@ -12,7 +12,7 @@ from app import models
 
 Base.metadata.create_all(bind=engine)
 
-app = FastAPI(title="FastAPI Control Work", version="1.0.0")
+app = FastAPI(title="FastAPI Control Work 4", version="1.0.0")
 
 
 db: dict[int, dict] = {}
@@ -93,4 +93,4 @@ def delete_user(user_id: int):
 
 @app.get("/")
 def root():
-    return {"message": "FastAPI Control Work is running", "docs": "/docs"}
+    return {"message": "The app is running!", "docs": "/docs"}
