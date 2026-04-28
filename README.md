@@ -4,7 +4,6 @@
 1. Клонирование репозитория
 
    git clone <your-repo-url>
-   cd fastapi_control_work
 
 2. Создание виртуального окружения
 
